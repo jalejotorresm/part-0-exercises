@@ -23,4 +23,4 @@ sequenceDiagram
     theBrowser->>myUser: Reloaded webpage with the updated note list
 ```
 
-![./assets/0.4png](./assets/0.4png)
+![./assets/0.4.PNG](./assets/0.4.PNG)
