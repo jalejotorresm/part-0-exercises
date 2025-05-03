@@ -10,9 +10,9 @@ sequenceDiagram
     theBrowser->>theServer: POST /new_note
     Note right of theBrowser: This submits the form with the note content
 
-    theServer->>theBrowser: Forwarding to Main page
-    theBrowser->>theServer: GET /
-    theServer->>theBrowser: index.html HTML File with the new note added
+    theServer->>theBrowser: Forwarding to notes page
+    theBrowser->>theServer: GET https://studies.cs.helsinki.fi/exampleapp/notes
+    theServer->>theBrowser: the notes HTML Base File
 
     theBrowser->>theServer: GET /main.css
     theServer->>theBrowser: main.css CSS File with the page styles
@@ -20,7 +20,7 @@ sequenceDiagram
     theBrowser->>theServer: GET /main.js
     theServer->>theBrowser: main.js JavaScript File with the note handling code
 
-    theBrowser->>myUser: Reloaded webpage with the updated note list
+    theBrowser->>myUser: Reloaded notes page with the updated note list
 ```
 
 ![./assets/0.4.PNG](./assets/0.4.PNG)
