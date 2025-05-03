@@ -13,17 +13,17 @@ sequenceDiagram
     Note right of theBrowser: the HTML loads the JavaScript needed for the SPA to run
 
     theBrowser->>theServer: GET /main.css
-    theServer->>theBrowser: main.css CSS File with the page styles
+    theServer-->>theBrowser: main.css CSS File with the page styles
 
     theBrowser->>theServer: GET /spa.js
-    theServer->>theBrowser: main.js JavaScript File with the note handling code
+    theServer-->>theBrowser: main.js JavaScript File with the note handling code
 
     Note right of theBrowser: executing JavaScript code
 
     theBrowser->>theServer: GET /data.json
     theServer-->>theBrowser: the JSON file with the notes content
 
-    theBrowser-->>myUser: Shows the page with the notes without a new page reload
+    theBrowser-->>myUser: Shows the updated notes view without a new page reload
 ```
 
 ![./assets/0.5.PNG](./assets/0.5.PNG)
