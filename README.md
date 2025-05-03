@@ -1,0 +1,1 @@
+This is the repository for the exercises related to the Part 0 of the FullStack Open Course.
